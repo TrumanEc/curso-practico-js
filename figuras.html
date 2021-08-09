@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Figuras Geomeétricas | Curso Práctico de JS</title>
+</head>
+<body>
+    <section class="section">
+        <form action="">
+           
+            <div class="card">
+                <h2 class="card__title">Square</h2>
+                <div class="shape square"></div>
+                <input type="number" class="card__input" id="squareSide" placeholder="Side of square?">
+                <button type="button" class="card__btn" onclick="calcularCuadrado()"> Calculate </button>
+            </div>
+
+            <div class="card">
+                <h2 class="card__title">Circle</h2>
+                <div class="shape circle"></div>
+                <input type="number" class="card__input" id="circleradius" placeholder="Circle radius?">
+                <button type="button" class="card__btn" onclick="calcularCirculo()"> Calculate </button>
+            </div>
+
+            <div class="card">
+                <h2 class="card__title">triangle</h2>
+                <div id="shadow"><div class="shape triangle">▲</div></div>
+                <div class="card__input-group">
+                    <input type="number" class="card__input tr" id="triangleSide1" placeholder="Side 1?">
+                    <input type="number" class="card__input tr" id="triangleSide2" placeholder="Side 2?">
+                    <input type="number" class="card__input tr" id="triangleBase" placeholder="Base?">  
+                </div>
+                <button type="button" class="card__btn" onclick="calcularTriangulo()"> Calculate </button>
+            </div>
+            
+        </form>
+    </section>
+    
+    <script src="./figuras.js"></script>
+</body>
+</html>

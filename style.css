@@ -1,0 +1,107 @@
+:root{
+    --main_color: black;
+    --card_border :linear-gradient(to left, #743ad5, #d53a9d);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+form{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 400px;
+    width: 300px;
+    margin: 50px;
+    padding: 20px;
+    border: 5px solid transparent;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+
+.card:hover{
+   
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: var(--card_border);
+}
+.card:hover .shape{
+    background-image: var(--card_border);
+}
+.shape{
+    margin: 30px;
+}
+
+.square{
+    width: 100px;
+    height:100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.triangle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+}
+
+#shadow{
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+
+input {
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+}
+
+button{
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+}
+
+.card__input{
+    background-color: transparent;
+    color: var(--card_border);
+    border: none;
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+    outline: none;
+}
+
+
+.tr{
+    width: 100px;
+    margin: auto;
+}
+
+.card__input-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
